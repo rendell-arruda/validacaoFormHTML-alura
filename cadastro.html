@@ -42,7 +42,8 @@
                 id="nome"
                 class="input"
                 type="text"
-                placeholder="Nome" required
+                placeholder="Nome"
+                required
               />
               <label class="input-label" for="nome">Nome</label>
               <span class="input-mensagem-erro"
@@ -71,7 +72,8 @@
                 type="password"
                 placeholder="Senha"
                 required
-                minlength="6"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{6,12}$"
+                title="A senha deve conter entre 6-12 caracteres, pelo menos uma letra maiuscula, um numero, e não deve conter símbolos"
               />
               <label class="input-label" for="senha">Senha</label>
               <span class="input-mensagem-erro"
@@ -165,7 +167,7 @@
               >
             </div>
           </fieldset>
-          <button class="botao">Cadastrar<button/>
+          <button class="botao">Cadastrar</button>
         </form>
       </section>
     </main>
